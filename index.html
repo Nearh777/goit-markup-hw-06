@@ -383,29 +383,48 @@
         </button>
         <p class="modal-title title">Залиште свої дані, ми Вам передзвонимо</p>
         <form class="modal-form">
-          <input
-            type="text"
-            name="user-name"
-            class="modal-input"
-            placeholder="Введіть Ім'я"
-            required
-          />
-          <input
-            type="tel"
-            name="user-phone"
-            class="modal-input"
-            placeholder="+380 (96) 111-11-11"
-            title="+380"
-            minlength="13"
-            maxlength="13"
-            required
-          />
-          <input
-            type="email"
-            name="user-email"
-            class="modal-input"
-            placeholder="Введіть Ваш email"
-          />
+          <label for="user-name" class="input-label">Ім'я</label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              placeholder="Микола"
+              required
+            />
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label for="user-phone" class="input-label">Телефон</label>
+          <div class="input-wrap">
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-input"
+              placeholder="+380 (96) 111-11-11"
+              title="+380"
+              minlength="13"
+              maxlength="13"
+              required
+            />
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="user-email" class="input-label">Пошта</label>
+          <div class="input-wrap">
+            <input
+              type="email"
+              name="user-email"
+              class="modal-input"
+              placeholder="Введіть Ваш email"
+            />
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </div>
+
           <button type="submit">Відправити</button>
         </form>
       </div>
