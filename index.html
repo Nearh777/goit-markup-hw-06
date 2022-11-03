@@ -270,60 +270,42 @@
             <li class="customers-item">
               <a href="" class="customers-link link">
                 <svg class="customers-soc-icon" width="106" height="60">
-                  <use
-                    href="./images/symbol-defs.svg#icon-logo-ya-co"
-                    
-                  ></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-ya-co"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-link link">
                 <svg class="customers-soc-icon" width="106" height="60">
-                  <use
-                    href="./images/symbol-defs.svg#icon-logo-taglaine"
-                    
-                  ></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-taglaine"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-link link">
                 <svg class="customers-soc-icon" width="106" height="60">
-                  <use
-                    href="./images/symbol-defs.svg#icon-logo-company"
-                    
-                  ></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-company"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-link link">
                 <svg class="customers-soc-icon" width="106" height="60">
-                  <use
-                    href="./images/symbol-defs.svg#icon-logo-foster"
-                    
-                  ></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-foster"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-link link">
                 <svg class="customers-soc-icon" width="106" height="60">
-                  <use
-                    href="./images/symbol-defs.svg#icon-logo-brand"
-                    
-                  ></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-brand"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-link link">
                 <svg class="customers-soc-icon" width="106" height="60">
-                  <use
-                    href="./images/symbol-defs.svg#icon-logo-tag"
-                    
-                  ></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-tag"></use>
                 </svg>
               </a>
             </li>
@@ -399,13 +381,31 @@
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="modal-title title">
-          Залиште свої дані, ми Вам передзвонимо
-        </p>
+        <p class="modal-title title">Залиште свої дані, ми Вам передзвонимо</p>
         <form class="modal-form">
-          <input type="text" name="user-name" class="modal-input" placeholder="Введіть Ім'я">
-          <input type="text" name="user-phone" class="modal-input" placeholder="Введіть телефон">
-          <input type="text" name="user-email" class="modal-input" placeholder="Введіть Ваш email">
+          <input
+            type="text"
+            name="user-name"
+            class="modal-input"
+            placeholder="Введіть Ім'я"
+            required
+          />
+          <input
+            type="tel"
+            name="user-phone"
+            class="modal-input"
+            placeholder="+380 (96) 111-11-11"
+            required
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            minlength="13"
+            maxlength="13"
+          />
+          <input
+            type="email"
+            name="user-email"
+            class="modal-input"
+            placeholder="Введіть Ваш email"
+          />
           <button type="submit">Відправити</button>
         </form>
       </div>
