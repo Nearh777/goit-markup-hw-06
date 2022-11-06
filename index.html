@@ -383,7 +383,8 @@
         </button>
         <p class="modal-title title">Залиште свої дані, ми Вам передзвонимо</p>
         <form class="modal-form">
-          <label for="user-name" class="input-label">Ім'я</label>
+          <div class="modal-field">
+            <label for="user-name" class="input-label">Ім'я</label>
           <div class="input-wrap">
             <input
               type="text"
@@ -396,7 +397,9 @@
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
-          <label for="user-phone" class="input-label">Телефон</label>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="input-label">Телефон</label>
           <div class="input-wrap">
             <input
               type="tel"
@@ -412,7 +415,9 @@
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
-          <label for="user-email" class="input-label">Пошта</label>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-label">Пошта</label>
           <div class="input-wrap">
             <input
               type="email"
@@ -424,8 +429,12 @@
               <use href="./images/symbol-defs.svg#icon-email"></use>
             </svg>
           </div>
-
-          <button type="submit">Відправити</button>
+          </div>
+          <div class="modal-field">
+            <label for="user-comment" class="input-label">Коментар</label>
+            <textarea name="user-comment" id="user-comment" class="modal-text" placeholder="Коиентар"></textarea>
+          </div>
+          <button type="submit" class="modal-button">Відправити</button>
         </form>
       </div>
     </div>
