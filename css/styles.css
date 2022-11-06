@@ -852,12 +852,30 @@ body {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+}
+.modal-checkbox 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.input-checkbox {
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 8.28px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  
   color: var(--title-text-color);
 }
 .modal-input:focus,
-.modal-text:focus {
+.input-label:focus {
   border-color: var(--accent-color);
 }
+
 .modal-input:focus + .modal-input-icon {
   fill: var(--accent-color);
 }
@@ -875,7 +893,7 @@ body {
 }
 
 .modal-button {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -888,6 +906,10 @@ body {
   border-radius: 4px;
   border-color: transparent;
   left: 164px;
-  top: 80%;
+  
   transform: translateY(-80%);
+}
+.modal-link {
+  text-decoration: underline;
+  color: var(--accent-color)
 }
