@@ -390,8 +390,9 @@
                 type="text"
                 name="user-name"
                 class="modal-input"
-                placeholder="Микола"
+                placeholder="Микола Мирний"
                 required
+                id="user-name"
               />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-person"></use>
@@ -410,6 +411,7 @@
                 minlength="13"
                 maxlength="13"
                 required
+                id="user-phone"
               />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
@@ -423,7 +425,8 @@
                 type="email"
                 name="user-email"
                 class="modal-input"
-                placeholder="Введіть Ваш email"
+                placeholder="name@gmail.com"
+                id="user-email"
               />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-email"></use>
@@ -437,11 +440,19 @@
               id="user-comment"
               class="modal-text"
               placeholder="Коментар"
+              id="user-comment"
             ></textarea>
           </div>
-          <div class="modal-checkbox">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy" class="input-checkbox">Погоджуюся з розсилкою та приймаю <a href="" class="modal-link">Умови договору</a> </label>
+          <div class="modal-field checkbox">
+            <input type="checkbox" name="policy" id="policy" class="input-checkbox" />
+            <label for="policy" class="check-text"
+              >Погоджуюся з розсилкою та приймаю <a href="" class="modal-link">Умови договору</a>
+              <span
+                ><svg class="checkbox-icon" width="16" height="15">
+                  <use href="./images/symbol-defs.svg#icon-icon-check""></use>
+                  </svg>
+                </span>
+            </label>
           </div>
           <button type="submit" class="modal-button">Відправити</button>
         </form>
